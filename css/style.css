@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+ul,
+ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    
+    background-image: url(../imagenes-b/portadaheader.jpg);
+    background-repeat:no-repeat ;
+    background-color: rgb(3, 17, 54);
+    background-position: center;
+
+    margin: 30px;
+    padding: 15px;
+    height: 35vw;
+}
+text{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:justify;
+}
+.title-uno {
+    color: antiquewhite;
+    text-align:center;
+    text-justify:justify ;
+    text-decoration: underline;
+    margin: 130px 0px;
+    background-color: rgba(15, 128, 128, 0.548);
+}
+/* estilos para login */
+.login {
+    height: 18px;
+    text-align:center;
+    text-decoration: solid;
+    background-color: rgb(214, 52, 52);
+    color: antiquewhite;
+    padding: 10px;
+    position:fixed ;
+    border-bottom-right-radius: 40px;
+    align-items: justify;
+
+}
+header nav{
+    width: fit-content;
+    margin: 100px auto 0px;
+    text-align: center;
+    
+}
+header nav ul li{
+    display: inline-block;
+    padding: 50px 15px;
+}
+header nav ul li a{
+    color:rgb(228, 204, 204);
+    position: center;
+    background-color: rgba(15, 77, 128, 0.685);
+    border: solid rgba(202, 66, 12, 0.76);
+    text-justify:distribute;
+    border-radius: 100px;
+    padding: 3px;
+}
+body{
+background-image: url(../imagenes-b/bodyfondo.jpg) ;
+background-size: 110vh 25vw;
+width: auto;
+}
+
+h1{
+    font-size: 30px;
+    color: antiquewhite;
+    background-color: rgb(3, 17, 54);
+    text-align: center;
+}
+h2{
+    font-size: 20px;
+    text-decoration: underline;
+    color:rgb(12, 180, 40);
+    background-color: rgb(3, 17, 54);
+    ;
+}
+h3, h4{
+    
+    color: antiquewhite;
+    background-color: rgb(3, 17, 54);
+}
+
+h2, h3 {
+text-align:center;
+height: 35px;
+width: 500px;
+margin: 20px auto;
+padding: 15px;
+
+}
+h4 {
+    text-align:center;
+    margin: 20px auto;
+    padding: 15px;
+    
+    }
+
+.promociones {
+    width: 50%;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta {
+    border: 4px solid black;
+    width: 250px;
+    height: auto;
+    padding:15px;
+    border-color: rgb(167, 130, 11);
+    margin: 1px 1px 1px 1px;
+
+}
+
+
+.tarjeta__img{
+    width: 100%;
+
+}
+.tarjeta__titulo{
+    text-align: center;
+}
+.tarjeta__precio{
+    color: aliceblue;
+    display: block;
+    padding: 10px 0;
+    font-size: 1.5rem;
+}
+
+.tarjeta__variable{
+    padding: 4px;
+    margin: 3px;
+    border: solid 2px black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.tarjeta__variable--activo{
+    background-color: cadetblue;
+    padding: 4px;
+    border: solid 2px black;
+    text-align: center;
+}
+
+
+
+.tarjeta__boton{
+    margin-top: 10px;
+    display: block;
+    justify-content: center;
+    border: 2px solid black;
+    text-align: center;
+    padding: 5px 0;
+    background-color: brown;
+    color: aliceblue;
+}
+article span{
+    background-color: rgba(9, 177, 51, 0.808);
+}
+.grancaja__1{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+} 
+.caja__1{
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+}
+
+button{
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+
+}
+.img--noticias {
+    margin: 0 auto;
+    width: 700px;
+    display:block;
+}
+/* Estilos para Formulario */
+form{
+    background-color: rgba(3, 17, 54, 0.815);
+    text-align: center;
+    color: antiquewhite ; 
+    padding: 20px;
+    margin: 25px;
+    width: auto;
+}
+form a {
+    background-color: rgb(214, 52, 52);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+div h2{
+    text-align: center;
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.623);
+    color: antiquewhite;
+    width: auto;
+}
+
+p{
+    align-items: center;
+    text-align: justify;
+    color:antiquewhite;
+    background-color:rgb(3, 17, 54); 
+    width: auto;
+}
+.noticias__texto{
+    align-items: center;
+    text-align: justify;
+    color:antiquewhite;
+    background-color:rgb(3, 17, 54); 
+    width: 1000px;
+}
+.fixture__texto {
+    width: 200px;
+    text-align: center;
+}
+input{
+    margin: 20px;
+}
+
+/* Estilos aplicados al footer */
+footer{
+        background-color: rgba(29, 25, 25, 0.829);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    
+}
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 30px;
+}
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.box__footer .logo img{
+    width: 180px;
+    
+    }
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: rgb(150, 112, 112);
+    font-weight: 700;
+}
+.box__footer a{
+    margin-top: 10px;
+    color: antiquewhite;
+    font-weight: 500;
+}
+.box__footer a:hover{
+    opacity: 0.8;
+}
+.box__footer a .fab{
+    font-size: 20px;
+    ;
+}
+/* Estilos para tabla- seccion fixture */
+table, th, td {
+    background-color:rgb(3, 17, 54);
+    padding: 5px;
+    margin: 20px;
+    border: 3px solid black;
+    width: 600px;
+    text-align: center;
+    color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    
+}
+.fixture--pais{
+
+    width: 100px;
+
+}
+.fixture--vs{
+width: 90px;
+}
+/* table{
+
+    margin-left: 25vw;
+} */
+.fixture__titulo{
+    background-color: rgb(121, 7, 7);
+    border-radius: 30px ;
+    width: fit-content;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    }
+
+footer p{
+    background: none;
+}
+footer a img{
+    width: 15px;
+}
+.logo{
+    max-width: 100px;
+    border-radius: 25px 25px 25px ;
+    margin: 15px;
+}
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;;
+    padding: 0px 40px;
+}
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+    text-align: center;
+    }
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+    margin-top: 30px;
+    text-align: justify;
+    
+}
