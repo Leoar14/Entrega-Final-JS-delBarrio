@@ -4,102 +4,155 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog - Selección Argentina</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <header>
-      <h1 class="title-uno" id="titulo">Selección de Futbol Argentina</h1>
-      <span class="login"><a class="login" href="./pages-b/login.html">Ir al Login</a></span>
-      <nav>
-        <ul>
-          <li>
-            <a href="./pages-b/tienda.html">Tienda</a>
-          </li>
-          <li>
-            <a href="./pages-b/plantilla.html">Plantilla</a>
-          </li>
-          <li>
-            <a href="./pages-b/fixture.html">Fixture</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h2>Últimos Partidos</h2>
-      <section>
-        <article>
-          <h3>Argentina vs Jamaica</h3>
+  
+
+      
+      <body>
+        <header class="container justify-content-center"> 
+
+        <!-- Inicio del menu -->
+        
+          <nav class="navbar  navbar-blue bg-blue">
+            <div class="container-fluid m-2">
+            <!-- icono -->
+    
+            <a class="navbar-brand" href="#">
+                <img  class="imagenes-videos" src="./imagenes-b/logoheader.jpg" alt="logo de la asociacion de futbol argentino" width="200">
+              </a>
+                
+            <!-- boton del menu -->
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+              <!-- elementos del menu colapsable -->
+    
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item ">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages-b/plantilla.html">Plantilla</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Servicios
+                  </a>
+    
+                  <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./pages-b/tienda.html">Tienda</a></li>
+                    <li><a class="dropdown-item" href="./pages-b/fixture.html">Fixture</a><li>   
+                    <li><a class="dropdown-item" href="./pages-b/login.html">Login</a><li> 
+                  </ul>
+                </li>
+              </ul>
+    
+              <hr class="d-md-none text-white-50">
+    </header> 
+     
+
+    <div class="container__title">
+        <h1  id="titulo">Selección de Futbol Argentina</h1>
+        <h2 >Últimos Partidos</h2>
+    </div>
+
+    <main class="main__container">
+        
+          <h3 class="main__container-titles">Argentina vs Jamaica</h3>
           <!-- seccion para agregar contenido img, parafos, etc... -->
-          <img class="img--noticias" src="../imagenes-b/argentina-jamaica.jpg" alt="Messi contento por sus 2 goles"/>
-
+          <div class="container__query">
+          <div class="imagenes-videos">
+          <img class=" img--noticias " src="../imagenes-b/argentina-jamaica.jpg" alt="Messi contento por sus 2 goles"/>
+        </div>
           <p class="noticias__texto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            velit consectetur porro, et eius pariatur ea nobis quae? Quo beatae
-            dolorem perferendis omnis modi aperiam sunt aut a soluta minima?
-          </p>
+            La Selección Argentina goleó 3-0 a Jamaica con un gol de Julián Álvarez y dos de Lionel Messi, que ingresó en el segundo tiempo y en apenas tres minutos perfiló la goleada en la ciudad estadounidense de Nueva Jersey, en el último duelo de la Albiceleste antes de viajar al Mundial de Qatar.
 
+Messi comenzó en el banco, jugó poco más de media hora y ese tiempo le bastó para poner cifras concretas en el juego con un tanto en el '89 y otro al minuto.
+
+Con el triunfo de este martes, los de Lionel Scaloni alargaron su invicto a 35 partidos e igualaron las rachas sin perder de España (2007-2009) y Brasil (1993-1996).
+
+A esta selección argentina solo le queda por delante la máxima serie invicta de selecciones, conseguida por la Italia de Roberto Mancini entre 2018 y 2021, con 37 encuentros.
+          </p>
+        </div>
+        <div class="container__query">
+          <div class="imagenes-videos">
+          <iframe class=" img--noticias" width="400" height="315" src="https://www.youtube.com/embed/5YmxhsOV1y0" ="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+          </div>
           <p class="noticias__texto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            velit consectetur porro, et eius pariatur ea nobis quae? Quo beatae
-            dolorem perferendis omnis modi aperiam sunt aut a soluta minima?
+            A los 67 minutos, 'La Pulga' tuvo el gol en sus pies, pero el portero Andre Blake desvió el tiro del jugador del PSG con sus pies.
+
+Pero la tercera fue la vencida. A los 86 minutos, el capitán albiceleste anotó desde fuera del área para poner el 2-0.
+
+Mientras festejaba, otro hincha ingresó al campo para pedirle su autógrafo. Tres minutos después, Messi anotó el tercero de Argentina de tiro libre. Poco después, un tercer fanático saltó al campo para abrazar al capitán argentino.
           </p>
-
-          <iframe class="img--noticias" width="560" height="315" src="https://www.youtube.com/embed/5YmxhsOV1y0" ="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-          <p class="noticias__texto">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet ipsum
-            magnam eius adipisci, quae excepturi culpa nesciunt facere
-            explicabo, laborum ullam, inventore et porro sit voluptas maiores
-            doloremque quaerat fuga!
-          </p>
-
-          <article>
-            <h3>Argentina vs Honduras</h3>
-
+        </div>
+      </div>
+      
+          <div>
+            <h3 class="main__container-titles">Argentina vs Honduras</h3>
+            <div class="container__query">
+            <div class="imagenes-videos">
             <img class="img--noticias" src="../imagenes-b/argentina-honduras.jpg" alt="Messi contra honduras"/>
-            <p class="noticias__texto">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
-              ipsum magnam eius adipisci, quae excepturi culpa nesciunt facere
-              explicabo, laborum ullam, inventore et porro sit voluptas maiores
-              doloremque quaerat fuga!
+            </div>
+            <p  class="noticias__texto">
+              Argentina derrotó a Honduras por 3-0 este viernes con una exhibición de Leo Messi, que anotó dos tantos en una fiesta de la hinchada de la albiceleste en Miami.
+
+              Mantuvo su línea habitual el equipo de Lionel Scaloni mostrando un juego muy vistoso y dominando de principio a fin con Messi en su papel de líder.
+
+El jugador del PSG francés fue el principal creador de juego y firmó dos goles: uno de penalti y el otro de hermosa factura.
             </p>
-          </article>
+          </div>
+          </div>
+          <h2 class=" main__container-titles">Seccion Noticias</h2>
+          <h2 class="main__container-titles">Seguimiento de los jugadores Pre-Mundial</h2>
+          <p class="noticias__texto">
+            Los dirigidos por Lionel Scaloni suman rodaje en sus clubes con la mira puesta en la inminente Copa del Mundo.
 
-          <section>
-            <article class="noticias">
-              <p class="noticias__texto">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Nostrum dolore id soluta ipsum a corrupti aut eum, minima, sequi
-                amet aperiam odio. Eveniet deleniti, laboriosam dolorum ratione
-                at eius ad.
-              </p>
-
-              <p class="noticias__texto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                blanditiis eos iste deserunt, amet assumenda ab necessitatibus
-                ut laborum quo. Soluta, omnis voluptatem. Eum fugiat hic
-                possimus, ut debitis quaerat?
-              </p>
+A continuación, el 1x1 de los integrantes de la Scaloneta que por ahora parecen tener más chances de decir presente en Qatar:
+          </p>
           
-            </article>
-          </section>
-          <section>
-            <h2>Seccion Noticias</h2>
-            <h3 class="noticias__titulo">Estadísticas Pre-Mundial</h3>
-            <p class="noticias__texto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              blanditiis eos iste deserunt, amet assumenda ab necessitatibus ut
-              laborum quo. Soluta, omnis voluptatem. Eum fugiat hic possimus, ut
-              debitis quaerat?
-            </p>
-            <p class="noticias__texto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              blanditiis eos iste deserunt, amet assumenda ab necessitatibus ut
-              laborum quo. Soluta, omnis voluptatem. Eum fugiat hic possimus, ut
-              debitis quaerat?
-            </p>
-          </section>
-        </article>
-      </section>
+          <div class="container__noticias">
+            
+
+             <span class="noticias__span"> EMILIANO MARTÍNEZ (Aston Villa)</span>
+<p class="noticias__texto">Dibu Martínez fue titular en la goleada por 4 a 0 de Aston Villa ante Brentford. Así pudo mantener la valla invicta luego de cuatro partidos. Un buen triunfo y una sólida actuación del marplatense pensando en el Mundial. </p> 
+
+<span class="noticias__span"> NICOLÁS OTAMENDI (Benfica)</span>
+<p class="noticias__texto"> Nicolás Otamendi fue titular en la victoria por 1 a 0 de Benfica ante Porto en el clásico portugués. El defensor de la Selección completó los 90 minutos y está en un muy buen nivel, junto con su equipo, en la recta final rumbo al Mundial. </p>
+
+<span class="noticias__span"> CRISTIAN ROMERO (Tottenham)</span>
+<p class="noticias__texto">Cristian Romero no jugó el fin de semana para Tottenham y encendió las alarmas. El Cuti tiene una molestia muscular, que no lo marginará del Mundial, y el cuerpo técnico de la Selección espera ver su evolución. Cuti es clave en la defensa de la Scaloneta.</p>
+
+<span class="noticias__span"> NAHUEL MOLINA (Atlético de Madrid)</span>
+<p class="noticias__texto"> Nahuel Molina fue titular y sufrió una tarjeta amarilla en la victoria de visitante de Atlético de Madrid ante Betis. Venía de jugar todo el partido en el empate 1 a 1 de Atlético de Madrid ante Rayo Vallecano. </p>
+
+<span class="noticias__span"> NICOLÁS TAGLIAFICO (Lyon)</span>
+<p class="noticias__texto">Nicolás Tagliafico fue titular y jugó todo el partido en la victoria de Lyon ante Montpellier, por la Ligue 1. Así el ex Independiente sigue sumando minutos como titular de cara al Mundial.</p>
+
+<span class="noticias__span"> LEANDRO PAREDES (Juventus)</span>
+<p class="noticias__texto"> Leandro Paredes sufrió una molestia en el muslo en la goleada de Juventus ante Empoli por la Serie A y tendrá para varias semanas de recuperación. Una noticia que preocupa a poco del inicio del Mundial, aunque hay optimismo para que el volante, pieza clave para Scaloni, pueda llegar en forma a Qatar.</p>
+
+<span class="noticias__span"> RODRIGO DE PAUL (Atlético de Madrid)</span>
+<p class="noticias__texto">Rodrigo de Paul fue suplente en la victoria del Atlético de Madrid 2 a 1 ante Betis. Ingresó a cinco del final por Saúl Ñíguez para mantener el resultado. Venía de ser titular en el 1 a 1 de Atlético de Madrid ante Rayo Vallecano.</p>
+
+<span class="noticias__span"> GIOVANI LO CELSO (Villarreal)</span>
+<p class="noticias__texto">Giovani Lo Celso no fue convocado en la derrota ante Barcelona de la semana pasada por una molestia muscular. Sin embargo, estuvo en el banco en el triunfo por 2 a 1 ante Almería, pero no ingresó.</p>
+
+<span class="noticias__span"> LIONEL MESSI (PSG)</span>
+<p class="noticias__texto">Lionel Messi se afianza de cara a la Copa del Mundo. Por la Ligue 1 en el 3 a 0 ante Ajaccio, marcó un gran gol tras pase de taco de Mbappé al que luego le dio dos asistencias, en otro gran partido del rosarino. Recuperado de una molestia en el gemelo derecho que lo había marginado de los dos últimos partidos, Messi había vuelto a las canchas en la victoria por 1 a 0 frente a Olympique de Marsella.</p>
+
+<span class="noticias__span"> ÁNGEL DI MARÍA (Juventus)</span>
+<p class="noticias__texto">Angelito Di María comenzó su recuperación luego del desgarró sufrido ante Maccabi Haifa. Sin embargo, su participación en el Mundial no corre peligro, ya que se confirmó que sufrió una lesión de bajo grado en el tendón de la corva del muslo derecho y tendrá para tres semanas para volver a la canchas.</p>
+
+<span class="noticias__span"> LAUTARO MARTÍNEZ (Inter)</span>
+<p class="noticias__texto">Lautaro Martínez fue titular y figura en el 4 a 3 de Inter ante Fiorentina, donde el Toro marcó dos goles y dio una asistencia. Al ex Racing se le abrió el arco en los últimos partidos y esa es una muy buena noticia para Scaloni.</p>
+</div>  
     </main>
 
     <footer>
@@ -113,14 +166,7 @@
               class=""/>
           </div>
         </div>
-  
-        <div class="box__footer">
-          <h2>Soluciones</h2>
-          <a href="#">App Desarrollo</a>
-          <a href="#">App Marketing</a>
-          <a href="#">IOS Desarrollo</a>
-          <a href="#">Android Desarrollo</a>
-        </div>
+
         <div class="box__footer">
           <h2>Compañia</h2>
           <a href="#">Acerca De</a>
@@ -128,13 +174,27 @@
           <a href="#">Procesos</a>
           <a href="#">Servicios</a>
         </div>
+
+
+
+
+
+
+
         <div class="box__footer">
           <h2>Redes Sociales</h2>
-          <a href="https://www.facebook.com/leo.14.cai"><i class="fab"><img src="./imagenes-b/facebook-icon.jpg" alt="Icono Facebook"/></i> Facebook</a>
-          <a href="https://www.instagram.com/leodelbarrio.cai/" ><img src="./imagenes-b/Instagram-Icon.jpg" alt="Icono Instagram" /><i class="fab" ></i> Instagram </a >
-          <a href="#" ><i class="fab"><img src="./imagenes-b/twitter-logo.jpg" alt="Icono Twitter" /></i> Twitter</a>
-          <a href="#" ><i class="fab" ><img src="./imagenes-b/linkedin-icon.jpg" alt="Icono Linkedin" /></i> Linkedin</a >
+          <a href="https://www.facebook.com/leo.14.cai" target="_blank"><i class="fab bi bi-facebook"></i> Facebook</a>
+          <a href="https://www.instagram.com/leodelbarrio.cai/" target="_blank" ><i class="fab bi bi-instagram" ></i> Instagram </a >
+          <a href="#" ><i class="fab bi bi-twitter"></i> Twitter</a>
+          <a href="#" ><i class="fab bi bi-linkedin" ></i> Linkedin</a >
         </div>
+      
+
+
+
+
+
+
         <div class="box__footer">
           <a href="#titulo"><h2>Ir al inicio</h2></a>
         </div>
@@ -144,13 +204,13 @@
           <input type="submit" value="submit" />
         </div>
       </section>
+      <section class="container__footer">
       <div class="box__copyright">
         <hr>
         <p>Todos los derechos reservados ° 2022 <b>AOBADB Corpored</b></p>
       </div>
+    </section>
     </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
-<!-- continuar desarrollando footer
-incluir menu desplegable
-usar tablas para los fixture -->
