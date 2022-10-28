@@ -1,92 +1,154 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Selección Argentina</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Blog sobre la Selección Argentina</title>
   </head>
-  <body>
-    <header>
-      <h1 class="title-uno" id="titulo">¡Súmate al Equipo!</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="./plantilla.html">Plantilla</a>
-          </li>
-          <li>
-            <a href="./tienda.html">Tienda</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  
+
+      
+      <body>
+        <header class="container justify-content-center"> 
+
+        <!-- Inicio del menu -->
+        
+          <nav class="navbar  navbar-blue bg-blue">
+            <div class="container-fluid m-2">
+            <!-- icono -->
+    
+              <a class="navbar-brand" href="#">
+                <img  class="imagenes-videos" src="../imagenes-b/logoheader.jpg" alt="logo de la asociacion de futbol argentino" width="200">
+              </a>
+                
+            <!-- boton del menu -->
+    
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+              <!-- elementos del menu colapsable -->
+    
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item ">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages-b/plantilla.html">Plantilla</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Servicios
+                  </a>
+    
+                  <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../pages-b/tienda.html">Tienda</a></li>
+                    <li><a class="dropdown-item" href="../pages-b/fixture.html">Fixture</a><li>   
+                    <li><a class="dropdown-item" href="../pages-b/login.html">Login</a><li> 
+                  </ul>
+                </li>
+              </ul>
+    
+              <hr class="d-md-none text-white-50">
+              </div>
+            </nav>
+    </header> 
+    <br>
     <div>
-      <h2>¡Regístrate Para Acceder!</h2>
+      <h1>¡Regístrate Para Acceder!</h1>
     </div>
 
     <main>
-      <form action="">
-        <div>
-          <label for="nombre-usuario">Nombre: </label>
-          <input type="text" name="nombre" id="nombre-usuario" placeholder="Juan"/>
-        </div>
 
-        <div>
-          <label for="apellido-usuario">Apellido: </label>
-          <input type="text" name="apellido" id="apellido-usuario" placeholder="Rodriguez"/>
-        </div>
+    <section class="form">
 
-        <div>
-          <label for="email-usuario">Email: </label>
-          <input type="email" name="email" id="email-usuario" placeholder="juan.rodriguez@gmail.com"/>
-        </div>
+      <figure class="form__figure">
+          <img src="../imagenes-b/bodyfondo2.jpg" class="form__img">
+      </figure>
 
-        <div>
-          <label for="celular-usuario">Celular: </label>
-          <input type="text" name="Celular" id="celular-usuario" placeholder="154XXXXXX"/>
-        </div>
+      <div class="form__contact">
 
-        <div>
-          <span>Genero: </span>
+          <h2 class="form__title">Hola nuevamente!</h2>
+          <p class="form__paragraph">¡Bienvenido otra vez, se te ha echado de menos!</p>
 
-          <label for="genero">Mujer</label>
-          <input type="radio" name="genero" value="mujer" />
+          <form class="form__form1">
 
-          <label for="genero">Hombre</label>
-          <input type="radio" name="genero" value="hombre" />
+              <input type="text" name="nombre" id="nombre-usuario" placeholder="Juan" class="form__input">
 
-          <label for="genero">No Responde</label>
-          <input type="radio" name="genero" value="no-respuesta" />
-        </div>
+              <input type="password" placeholder="Contraseña" class="form__input">
 
-        <div>
-          <label for="novedades">¿Desea recibir notificaciones y novedades?</label>
-          <input type="checkbox" name="novedades"/>
-        </div>
+              <input type="email" name="email" id="email-usuario" placeholder="juan.rodriguez@gmail.com" class="form__input">
 
-        <input type="submit" value="Registrarse" />
+              
 
-      </form>
-    </main>
+              <div>
+                <label for="genero">Mujer</label>
+                <input type="radio" name="genero" value="mujer" />
+      
+                <label for="genero">Hombre</label>
+                <input type="radio" name="genero" value="hombre" />
+      
+                <label for="genero">No Aplica</label>
+                <input type="radio" name="genero" value="no-respuesta" />
+              </div>
+
+              <input type="submit" value="registrarse" class="form__input--submit">
+      
+          </form>
+
+          <p class="form__paragraph">O continua con tu cuenta:</p>
+
+          <article class="form__social">
+
+            <a href="" target="_blank" class="form__link"><i class="fab bi bi-facebook form__link w-50"></i> Facebook</a>
+
+            <a href="" target="_blank" class="form__link"><i class="fab bi bi-instagram form__link w-50"></i> Instagram</a>
+              
+            <a href="" target="_blank" class="form__link"><i class="fab bi bi-google form__link"></i> Google</a>
+
+
+          </article>
+
+      </div>
+
+  </section>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
     <footer>
       <section class="container__footer">
         <div class="box__footer">
           <div >
-            <img class="logo" src="../imagenes-b/logo.jpg" alt="logo empresa"/>
+            <img
+              class="logo"
+              src="../imagenes-b/logo.jpg" 
+              alt="logo empresa" 
+              class=""/>
           </div>
         </div>
-  
-        <div class="box__footer">
-          <h2>Soluciones</h2>
-          <a href="#">App Desarrollo</a>
-          <a href="#">App Marketing</a>
-          <a href="#">IOS Desarrollo</a>
-          <a href="#">Android Desarrollo</a>
-        </div>
+
         <div class="box__footer">
           <h2>Compañia</h2>
           <a href="#">Acerca De</a>
@@ -94,26 +156,34 @@
           <a href="#">Procesos</a>
           <a href="#">Servicios</a>
         </div>
+
         <div class="box__footer">
           <h2>Redes Sociales</h2>
-          <a href="https://www.facebook.com/leo.14.cai"><i class="fab"><img src="../imagenes-b/facebook-icon.jpg" alt="Icono Facebook"/></i> Facebook</a>
-          <a href="https://www.instagram.com/leodelbarrio.cai/"><img src="../imagenes-b/Instagram-Icon.jpg" alt="Icono Instagram"/><i class="fab"></i> Instagram</a>
-          <a href="#"><i class="fab"><img src="../imagenes-b/twitter-logo.jpg" alt="Icono Twitter" /></i> Twitter</a>
-          <a href="#"><i class="fab"><img src="../imagenes-b/linkedin-icon.jpg" alt="Icono Linkedin"/></i> Linkedin</a>
+          <a href="https://www.facebook.com/leo.14.cai" target="_blank"><i class="fab bi bi-facebook"></i> Facebook</a>
+          <a href="https://www.instagram.com/leodelbarrio.cai/" target="_blank" ><i class="fab bi bi-instagram" ></i> Instagram </a >
+          <a href="#" ><i class="fab bi bi-twitter"></i> Twitter</a>
+          <a href="#" ><i class="fab bi bi-linkedin" ></i> Linkedin</a >
         </div>
+      
+
         <div class="box__footer">
           <a href="#titulo"><h2>Ir al inicio</h2></a>
         </div>
-        <div>
-          <label for="comentario"><h2>Sugerencias:</h2></label>
-          <textarea name="comentario" d="comentario" placeholder="escriba su comentario aquí" cols="50" rows="5"></textarea>
-          <input type="submit" value="submit"/>
+        <div class="box__footer">
+          <label for="comentario"><h2>Sugerencias:</h2></label>          
+          <textarea name="comentario" id="comentario" placeholder="escriba su comentario aquí" cols="35" rows="5" ></textarea>
+          <input type="submit" value="submit" class="inline"/>
+          
         </div>
       </section>
+      <section class="container__footer">
       <div class="box__copyright">
         <hr>
         <p>Todos los derechos reservados ° 2022 <b>AOBADB Corpored</b></p>
       </div>
+    </section>
     </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -17,10 +17,10 @@ header{
 }
 
 body{
-    background-image: url(../imagenes-b/bodyfondo.jpg) ;
+
+    background-image: url(../imagenes-b/bodyfondo1.jpg) ;
+    
     background-size: 100vw;
-    
-    
     width: 100%;
     }
 
@@ -31,19 +31,25 @@ header navbar{
     text-align: center;
     
 }
+h1{
+    color: antiquewhite;
+}
 
+h1, h2, h3, h4 {
+    background-color:  rgba(3, 17, 54, 0.623);
+}
 .container__title h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: antiquewhite;
+    color: white;
     gap: 10px;
     display: none;
 }
 
 .container__title h2{
-    color: antiquewhite;
+    color: white;
     display: flex;
     justify-content: center;
     margin-top: 15px;
@@ -56,7 +62,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
     
 }
 
@@ -71,19 +77,19 @@ img{
 }
 
 .main__container-titles{
-    color: antiquewhite;
+    color: rgb(99, 15, 15);
     font-size: 15px;
     font-weight: 900;
 }
 
 .noticias__texto{
-    color: antiquewhite;
+    color: rgb(99, 15, 15);
     
     font-size: 13px;
 }
 
 .noticias__span{
-    color: antiquewhite;
+    color: rgb(99, 15, 15);
     padding: 10px;
 }
 
@@ -99,15 +105,19 @@ img{
 
 .navbar-toggler-icon{
     background-color: rgb(236, 227, 98);
+    border-radius: 40px ;
 }
 
-
-.promociones {
-    width: 50%;
+.carousel{
+    border: 5px radius 20px blue;
+    border-collapse: 5px solid;
+}
+.carousel-item{
+    
     align-items: center;
-    display: flex;
-    gap: 20px;
+    justify-content: center;
 }
+
 
 .tarjeta {
     border: 4px solid black;
@@ -116,6 +126,8 @@ img{
     padding:15px;
     border-color: rgb(167, 130, 11);
     margin: 1px 1px 1px 1px;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -127,8 +139,22 @@ img{
 .tarjeta__titulo{
     text-align: center;
 }
+.tarjeta__title4{
+    text-align: center;
+    padding-top: 5px;
+    color: rgb(99, 15, 15);
+    text-decoration: underline 2px;
+    text-decoration-color: rgb(236, 227, 98) 
+    ;
+
+}
+.tienda__title{
+    color: rgb(99, 15, 15);
+}
+
+
 .tarjeta__precio{
-    color: aliceblue;
+    color: rgb(99, 15, 15);
     display: block;
     padding: 10px 0;
     font-size: 1.5rem;
@@ -139,7 +165,7 @@ img{
     margin: 3px;
     border: solid 2px black;
     background-color: white;
-    display: flex;
+    /* display: flex; */
     align-items: center;
 }
 
@@ -164,7 +190,7 @@ img{
 }
 
 .grancaja__1{
-    display: flex;
+
     justify-content: center;
     margin: 15px;
 } 
@@ -184,52 +210,163 @@ button{
 
 }
 /* Estilos para Formulario */
-form{
+
+
+.form{
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    background-image: linear-gradient(to left, rgba(54, 190, 231, 0.705), rgba(54, 190, 231, 0.705));
+    overflow: hidden;
+    padding: .7em;
+    border-radius: 1em;
+
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: .6em;
+
+    animation: mostrar 1.5s ease-in-out;
+}
+
+@keyframes mostrar {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.form__figure{
+    overflow: hidden;
+    border-radius: 1em;
     background-color: rgba(3, 17, 54, 0.815);
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__img{
+  
+    margin: auto;
+    width: 80%;
+    max-width: 60vw;
+}
+
+.form__contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 3em .7em;
     text-align: center;
-    color: antiquewhite ; 
-    padding: 20px;
-    margin: 25px;
-    width: auto;
 }
-form a {
-    background-color: rgb(214, 52, 52);
-    border-radius: 50px;
-    padding: 10px;
+
+.form__form1{
+    display: grid;
+    justify-items: center;
+    gap: 1.5em;
+    background-color: rgba(3, 17, 54, 0.815);
 }
+
+.form__input{
+    width: 80%;
+    max-width: 500px;
+    outline: none;
+    border: none;
+    padding: 1em;
+    font: inherit;
+    border-radius: .6em;
+}
+
+.form__input--submit{
+    background-color: #DC3F31;
+    color: #fff;
+    font-weight: 600;
+}
+
+.form__link {
+    width: max-content;
+    color: rgb(170, 33, 9);
+}
+
+.form__title{
+    font-size: 2.3rem;
+}
+
+.form__paragraph{
+    margin: .3em 0;
+}
+
+
+.form__social{
+    
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-auto-columns: max-content;
+    gap: 1em;
+}
+
+.form__link{
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: .6em 1.5em;
+}
+
+.form__link:hover{
+    background-color: #fff;
+}
+
+.form__icon{
+    width: 30px;
+    height: 30px;
+}
+
+/* estilos para fixture */
+.fixture__titulo{
+    background-color: rgb(121, 7, 7);
+    border-radius: 40px ;
+    width: fit-content;
+    justify-items: center;
+    text-align: center;
+    margin-top: 15px;
+    padding: 15px;
+    display: flex;
+    }
 
 
 .fixture__texto {
-    width: 200px;
+    width: 100px;
+    
     text-align: center;
+    padding-top: 15px;
 }
 
 .fixture--pais{
 
-    width: 100px;
+    width: 90px;
 
 }
 .fixture--vs{
 width: 90px;
 }
 
+.fixture__grupo {
+    width: max-content;
+}
 
-.fixture__titulo{
-    background-color: rgb(121, 7, 7);
-    border-radius: 30px ;
-    width: fit-content;
-    text-align: center;
-    padding: 15px;
-    display: flex;
-    }
 
     /* Estilos para tabla- seccion fixture */
 table, th, td {
     background-color:rgb(3, 17, 54);
     padding: 5px;
-    margin: 20px;
+    margin-top: 20px;
     border: 3px solid black;
-    width: 600px;
+    width: 375px;
     text-align: center;
     color: antiquewhite;
     align-items: center;
@@ -242,8 +379,8 @@ table, th, td {
 /* Estilos aplicados al footer */
 footer{
     
-    background-size: cover;
-    height: 600px;
+    background-size:auto;
+    
     width: 100%;
     padding: 10px 0px;
     margin: 10px 0px;
@@ -255,7 +392,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 900px;
+    width: 100%;
     margin-top: 10px;
 }
 .box__footer{
@@ -271,7 +408,7 @@ footer{
 .box__footer h2{
     padding: 10px;
     margin-bottom: 30px;
-
+    color: aliceblue;
     font-weight: 700;
 }
 .box__footer a{
@@ -298,6 +435,12 @@ footer a img{
     border-radius: 25px 25px 25px ;
     margin: 15px;
 }
+
+.inline{
+    display: flex;
+    display: inline-block;
+}
+
 .box__copyright{
     max-width: 1200px;
     
@@ -319,8 +462,16 @@ footer a img{
     text-align: justify;
     
 }
+@media (min-width:375px){
+    .fixture__grupo{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        justify-content:space-between;
+        align-content: center;
+    }
+}
 
-@media (min-width:800px){
+@media (min-width:764px){
     .container__query{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -329,8 +480,17 @@ footer a img{
         place-content: center;
         
         
-}
+    }
 
+    .container__title h1 {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    h2 {
+        margin-top: 15px;
+    }
     .imagenes-videos{
         
         grid-column: 2/3;
@@ -338,7 +498,9 @@ footer a img{
 
     .container__noticias{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: minmax(370px, 3fr);
+        justify-content: space-around;
+        align-items: space-around;
     }
 
     .noticias__span{
@@ -346,8 +508,9 @@ footer a img{
         border: 2px solid rgb(98, 136, 206);;
         box-shadow: 1px 1px 7px 1px white;
         margin: 10px;
-        transition: transform 300ms ease;
-        
+        transition: transform 30ms ease;
+    
+        margin-left: 45px;
     }
 
     .noticias__span:hover{
@@ -357,7 +520,50 @@ footer a img{
     .noticias__texto{
         grid-column: 3/5;
         margin: 10px;
-        border-bottom: 2px solid aquamarine;
+        border-bottom: 2px solid rgb(88, 84, 84) ;
         padding: 10px;
+        width: 300px;
     }
+    
+    .noticias__texto--jugadores {
+        display: grid;
+        grid-column: 3/5;
+       
+        border-bottom: 2px solid rgb(88, 84, 84) ;
+        width: 700px;
+        justify-content: space-around;
+        margin-left: 45px;
+    }
+    
+
+    .grancaja__1{
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+    } 
+
+    
+
+
+
+    .box__copyright {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container__query{
+        display: grid;
+       
+        grid-template-columns: minmax(200px, 3fr);
+    }
+
+    .form__figure{
+        display: block;
+    }
+
+
+
 }

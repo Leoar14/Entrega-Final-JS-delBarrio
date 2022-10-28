@@ -4,39 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog - Selección Argentina</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css" />
   </head>
-  <body>
-    
+  
+
       
-      <body class="bg-secondary">
+      <body>
+        <header class="container justify-content-center"> 
 
         <!-- Inicio del menu -->
         
-          <nav class="navbar navbar-expand-md navbar-blue bg-blue">
-            <div class="container-fluid">
+          <nav class="navbar  navbar-blue bg-blue">
+            <div class="container-fluid m-2">
             <!-- icono -->
     
-            <a class="navbar-brand" href="#">
-                <img src="../imagenes-b/logoheader.jpg" alt="logo de la asociacion de futbol argentino" width="200">
+              <a class="navbar-brand" href="#">
+                <img  class="imagenes-videos" src="../imagenes-b/logoheader.jpg" alt="logo de la asociacion de futbol argentino" width="200">
               </a>
                 
             <!-- boton del menu -->
     
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-    
+              </button>
+            </div>
               <!-- elementos del menu colapsable -->
     
             <div class="collapse navbar-collapse" id="menu">
               <ul class="navbar-nav me-auto">
-                <li class="nav-item">
+                <li class="nav-item ">
                   <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./pages-b/plantilla.html">Plantilla</a>
+                  <a class="nav-link" href="../pages-b/plantilla.html">Plantilla</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,22 +46,25 @@
                   </a>
     
                   <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="./pages-b/tienda.html">Tienda</a></li>
-                    <li><a class="dropdown-item" href="./pages-b/fixture.html">Fixture</a><li>   
-                    <li><a class="dropdown-item" href="./pages-b/login.html">Login</a><li> 
+                    <li><a class="dropdown-item" href="../pages-b/tienda.html">Tienda</a></li>
+                    <li><a class="dropdown-item" href="../pages-b/fixture.html">Fixture</a><li>   
+                    <li><a class="dropdown-item" href="../pages-b/login.html">Login</a><li> 
                   </ul>
                 </li>
               </ul>
-    </div>
-              <hr class="d-md-none text-white-100">
-              <header class="container"> 
+    
+              <hr class="d-md-none text-white-50">
+              </div>
+            </nav>
     </header> 
-
-    <h2 class="promociones__2"> Promociones Locas!</h2><br>
-    <section class="promociones">
-      
+    
+    <main class="main__container">
+      <h1 id="titulo">Tienda</h1>
+    <h3 class="main__container-titles"> Promociones Locas!</h3><br>
+    <section>
+       
       <!-- CAROUSEL-->
-      <div id="carouselExampleIndicators" class="carousel slide col-6" data-bs-ride="true">
+      <div id="carouselExampleIndicators" class="carousel slide align-content-center justify-content-center col-8" data-bs-ride="true">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -68,16 +73,16 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../imagenes-b/conjunto-mangacorta.jpg" class="d-block w-100" alt="conjunto-mangacorta">
+            <img src="../imagenes-b/conjunto-mangacorta.jpg" class="d-block w-120 img-fluid rounded-3" alt="conjunto-mangacorta">
           </div>
           <div class="carousel-item">
-            <img src="../imagenes-b/conjunto-mangalarga.jpg" class="d-block w-100" alt="conjunto-mangalarga">
+            <img src="../imagenes-b/conjunto-mangalarga.jpg" class="d-block w-120 img-fluid rounded-3" alt="conjunto-mangalarga">
           </div>
           <div class="carousel-item">
-            <img src="../imagenes-b/conjunto-alternativo.jpg" class="d-block w-100" alt="conjunto-alternativo">
+            <img src="../imagenes-b/conjunto-alternativo.jpg" class="d-block w-120 img-fluid rounded-3" alt="conjunto-alternativo">
           </div>
           <div class="carousel-item">
-            <img src="../imagenes-b/conjunto-abrigado.jpg" class="d-block w-100" alt="conjunto-abrigado">
+            <img src="../imagenes-b/conjunto-abrigado.jpg" class="d-block w-120 img-fluid rounded-3" alt="conjunto-abrigado">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -92,130 +97,126 @@
       <!-- CAROUSEL-->
     </section>
 
+
+    <div class="container__title">
     <h2>Artículos en venta</h2>
-    <h3>Uniformes</h3>
-    <div class="grancaja__1">
+    </div>
+        
+    <main class="main__container">
+
+      <h3 class="tienda__title">Uniformes</h3>
+      <div class="grancaja__1">
     
-      <div class="tarjeta">
-        <img class="tarjeta__img" src="../imagenes-b/camiseta-titular-sin-dorsales.jpg" alt="Camiseta Titular sin dorsal"/>
-        <h4>Camiseta Titular sin dorsal</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          nihil dolores optio voluptatibus facilis quod quam possimus maxime
-          expedita suscipit doloremque necessitatibus dolorum reprehenderit, non
-          eos at aliquam voluptatem earum!
-        </p>
-        <span class="tarjeta__precio">Precio: $20000 </span>
-        <a href="" class="tarjeta__boton">Comprar</a>
+        <div class="tarjeta">
+          <img class="tarjeta__img" src="../imagenes-b/camiseta-titular-sin-dorsales.jpg" alt="Camiseta Titular sin dorsal"/>
+          <h4 class="tarjeta__title4">Camiseta Titular sin dorsal</h4>
+          
+          <span class="tarjeta__precio">Precio: $20000 </span>
+          <a href="" class="tarjeta__boton">Comprar</a>
+        </div>
+
+
+        <div class="tarjeta">
+          <img class="tarjeta__img" src="../imagenes-b/camiseta-titular-con-dorsales.jpg" alt="Camiseta Titular con dorsal"/>
+          <h4 class="tarjeta__title4">Camiseta Titular con dorsal</h4>
+       
+          <span class="tarjeta__precio">Precio: $20000 </span>
+          <a href="" class="tarjeta__boton">Comprar</a>
+        </div>
+
+
+        <div class="tarjeta">
+          <img class="tarjeta__img" src="../imagenes-b/camiseta-titular-anterior.jpg" alt="Camiseta Titular Anterior"/><h4>Camiseta Titular Anterior</h4>
+        
+          <span class="tarjeta__precio">Precio: $17000 </span>
+          <a href="" class="tarjeta__boton">Comprar</a>
+        </div>
+
+
       </div>
-      <div class="tarjeta">
-        <img class="tarjeta__img" src="../imagenes-b/camiseta-titular-con-dorsales.jpg" alt="Camiseta Titular con dorsal"/>
-        <h4>Camiseta Titular con dorsal</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          nihil dolores optio voluptatibus facilis quod quam possimus maxime
-          expedita suscipit doloremque necessitatibus dolorum reprehenderit, non
-          eos at aliquam voluptatem earum!
-        </p>
-        <span class="tarjeta__precio">Precio: $20000 </span>
-        <a href="" class="tarjeta__boton">Comprar</a>
-      </div>
-      <div class="tarjeta">
-        <img class="tarjeta__img" src="../imagenes-b/camiseta-titular-anterior.jpg" alt="Camiseta Titular Anterior"/><h4>Camiseta Titular Anterior</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          nihil dolores optio voluptatibus facilis quod quam possimus maxime
-          expedita suscipit doloremque necessitatibus dolorum reprehenderit, non
-          eos at aliquam voluptatem earum!
-        </p>
-        <span class="tarjeta__precio">Precio: $17000 </span>
-        <a href="" class="tarjeta__boton">Comprar</a>
-      </div>
-      
+    
+
+    <section>
+      <div class="grancaja__1">
       <div class="tarjeta">
         <img class="tarjeta__img" src="../imagenes-b/pantalones-titulares.jpg" alt="pantalon titular"/>
-        <h4>Pantalon Titular</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          nihil dolores optio voluptatibus facilis quod quam possimus maxime
-          expedita suscipit doloremque necessitatibus dolorum reprehenderit, non
-          eos at aliquam voluptatem earum!
-        </p>
+   
+        <h4 class="tarjeta__title4">Pantalon Titular</h4>
+        
         <span class="tarjeta__precio">Precio: $13250 </span>
         <a href="" class="tarjeta__boton">Comprar</a>
       </div>
+
+
       <div class="tarjeta">
         <img class="tarjeta__img" src="../imagenes-b/pantalones-suplentes.jpg" alt="Pantalon suplente"/>
-        <h4>Pantalon Suplente</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          nihil dolores optio voluptatibus facilis quod quam possimus maxime
-          expedita suscipit doloremque necessitatibus dolorum reprehenderit, non
-          eos at aliquam voluptatem earum!
-        </p>
+
+        <h4 class="tarjeta__title4">Pantalon Suplente</h4>
+        
         <span class="tarjeta__precio">Precio: $13250 </span>
         <a href="" class="tarjeta__boton">Comprar</a>
       </div>
-    </div>  
+    
+
+    <div class="tarjeta">
+      <img class="tarjeta__img" src="../imagenes-b/pantalones-largos.jpg" alt="Pantalon Largo"/>
+      
+      <h4 class="tarjeta__title4">Pantalon Largo</h4>
+      
+      <span class="tarjeta__precio">Precio: $14250 </span>
+      <a href="" class="tarjeta__boton">Comprar</a>
+    </div>
+  </div>
+    
+      </section>
+
     <section>
-      <h3>Otros Artículos</h3><br>
+      <h3 class="tienda__title">Otros Artículos</h3><br>
+
+
+
     <div class="grancaja__1">
       <div class="tarjeta">
         <img class="tarjeta__img" src="../imagenes-b/gorras-venta.jpg" alt="gorras"/>
-        <h4>Gorras Selección</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          nihil dolores optio voluptatibus facilis quod quam possimus maxime
-          expedita suscipit doloremque necessitatibus dolorum reprehenderit, non
-          eos at aliquam voluptatem earum!
-        </p>
+        <h4 class="tarjeta__title4">Gorras Selección</h4>
+        
         <span class="tarjeta__precio">Precio: $5500 </span>
         <a href="" class="tarjeta__boton">Comprar</a>
       </div>
       <div class="tarjeta">
         <img class="tarjeta__img" src="../imagenes-b/mochila-seleccion.jpg" alt="mochila"/>
       
-        <h4>Mochila Selección</h4>
+        <h4 class="tarjeta__title4">Mochila Selección</h4>
         
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          nihil dolores optio voluptatibus facilis quod quam possimus maxime
-          expedita suscipit doloremque necessitatibus dolorum reprehenderit, non
-          eos at aliquam voluptatem earum!
-        </p>
+        
         <span class="tarjeta__precio">Precio: $16700 </span>
         <a href="" class="tarjeta__boton">Comprar</a>
       </div>
       <div class="tarjeta">
         <img class="tarjeta__img" src="../imagenes-b/botinero-seleccion.jpg" alt="botinero"/>
-        <h4>Botinero Selección</h4>
+        <h4 class="tarjeta__title4">Botinero Selección</h4>
         
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          nihil dolores optio voluptatibus facilis quod quam possimus maxime
-          expedita suscipit doloremque necessitatibus dolorum reprehenderit, non
-          eos at aliquam voluptatem earum!
-        </p>
+        
         <span class="tarjeta__precio">Precio: $8500 </span>
         <a href="" class="tarjeta__boton">Comprar</a>
       </div>
     </div>
     </section>
+   
+  </main>
+
     <footer>
       <section class="container__footer">
         <div class="box__footer">
           <div >
-            <img class="logo" src="../imagenes-b/logo.jpg" alt="logo empresa"/>
+            <img
+              class="logo"
+              src="../imagenes-b/logo.jpg" 
+              alt="logo empresa" 
+              class=""/>
           </div>
         </div>
-  
-        <div class="box__footer">
-          <h2>Soluciones</h2>
-          <a href="#">App Desarrollo</a>
-          <a href="#">App Marketing</a>
-          <a href="#">IOS Desarrollo</a>
-          <a href="#">Android Desarrollo</a>
-        </div>
+
         <div class="box__footer">
           <h2>Compañia</h2>
           <a href="#">Acerca De</a>
@@ -223,27 +224,33 @@
           <a href="#">Procesos</a>
           <a href="#">Servicios</a>
         </div>
+
         <div class="box__footer">
           <h2>Redes Sociales</h2>
-          <a href="https://www.facebook.com/leo.14.cai"><i class="fab"><img src="../imagenes-b/facebook-icon.jpg" alt="Icono Facebook"/></i> Facebook</a>
-          <a href="https://www.instagram.com/leodelbarrio.cai/"><img src="../imagenes-b/Instagram-Icon.jpg" alt="Icono Instagram"/><i class="fab"></i> Instagram</a>
-          <a href="#"><i class="fab"><img src="../imagenes-b/twitter-logo.jpg" alt="Icono Twitter" /></i> Twitter</a>
-          <a href="#"><i class="fab"><img src="../imagenes-b/linkedin-icon.jpg" alt="Icono Linkedin"/></i> Linkedin</a>
+          <a href="https://www.facebook.com/leo.14.cai" target="_blank"><i class="fab bi bi-facebook"></i> Facebook</a>
+          <a href="https://www.instagram.com/leodelbarrio.cai/" target="_blank" ><i class="fab bi bi-instagram" ></i> Instagram </a >
+          <a href="#" ><i class="fab bi bi-twitter"></i> Twitter</a>
+          <a href="#" ><i class="fab bi bi-linkedin" ></i> Linkedin</a >
         </div>
+      
+
         <div class="box__footer">
           <a href="#titulo"><h2>Ir al inicio</h2></a>
         </div>
-        <div>
-          <label for="comentario"><h2>Sugerencias:</h2></label>
-          <textarea name="comentario" d="comentario" placeholder="escriba su comentario aquí" cols="50" rows="5"></textarea>
-          <input type="submit" value="submit"/>
+        <div class="box__footer">
+          <label for="comentario"><h2>Sugerencias:</h2></label>          
+          <textarea name="comentario" id="comentario" placeholder="escriba su comentario aquí" cols="35" rows="5" ></textarea>
+          <input type="submit" value="submit" class="inline"/>
+          
         </div>
       </section>
+      <section class="container__footer">
       <div class="box__copyright">
         <hr>
         <p>Todos los derechos reservados ° 2022 <b>AOBADB Corpored</b></p>
       </div>
+    </section>
     </footer>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
