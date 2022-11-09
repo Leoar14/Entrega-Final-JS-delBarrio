@@ -9,43 +9,43 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <header class="container justify-content-center"> 
-<!-- Inicio del menu -->
+    <header class="container-fluid justify-content-center font-monospace"> 
+      <!-- Inicio del menu -->
       <nav class="navbar  navbar-blue bg-blue">
-        <div class="container-fluid m-2">
-<!-- icono -->
-          <a class="navbar-brand" href="#">
-            <img  class="imagenes-videos" src="../imagenes-b/logoheader.jpg" alt="logo de la asociacion de futbol argentino" width="200">
-          </a>
-<!-- boton del menu -->
+        <div class="container m-2">
+                        
+          <!-- boton del menu -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-<!-- elementos del menu colapsable -->
-        <div class="collapse navbar-collapse" id="menu">
+        <!-- icono -->
+        <a class="navbar-brand justify-content-end" href="#">
+          <img  class="imagenes-logo" src="../imagenes-b/logoheader.jpg" alt="logo de la asociacion de futbol argentino" width="150">
+        </a> 
+            <!-- elementos del menu colapsable -->
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
           <ul class="navbar-nav me-auto">
             <li class="nav-item ">
-              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item text-light">
               <a class="nav-link" href="../pages-b/plantilla.html">Plantilla</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Servicios
               </a>
-              <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="../pages-b/tienda.html">Tienda</a></li>
-                <li><a class="dropdown-item" href="../pages-b/fixture.html">Fixture</a><li>   
-                <li><a class="dropdown-item" href="../pages-b/login.html">Login</a><li> 
-              </ul>
+          <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="../pages-b/tienda.html">Tienda</a></li>
+            <li><a class="dropdown-item" href="../pages-b/fixture.html">Fixture</a><li>   
+            <li><a class="dropdown-item" href="../pages-b/login.html">Login</a><li> 
+          </ul>
             </li>
           </ul>
-          <hr class="d-md-none text-white-50">
         </div>
       </nav>
-    </header> 
+  </header>
     <main class="fixture__main">
       <h1 class="title-uno" id="titulo">Fase de grupos</h1>
       <h2>Grupo A</h2>

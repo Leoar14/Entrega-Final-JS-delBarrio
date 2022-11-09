@@ -13,17 +13,20 @@ a {
   text-decoration: none;
 }
 
+header {
+  background-color: rgba(3, 17, 54, 0.836);
+}
+
 body {
   background-color: rgba(139, 151, 185, 0.836);
   max-width: 100%;
 }
 
-header {
+header navbar {
   background-color: rgba(3, 17, 54, 0.836);
-}
-
-header .navbar {
-  background-color: rgba(3, 17, 54, 0.836);
+  align-items: end;
+  max-width: 100%;
+  text-align: end;
 }
 
 .container {
@@ -31,6 +34,7 @@ header .navbar {
 }
 
 .navbar-nav {
+  justify-content: end;
   width: 150px;
   flex-wrap: nowrap;
 }
@@ -258,10 +262,21 @@ button {
   padding: 0.7em;
   border-radius: 1em;
   display: grid;
+  grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   gap: 0.6em;
-  animation: mostrar 1.5s ease-in-out;
+  -webkit-animation: mostrar 1.5s ease-in-out;
+          animation: mostrar 1.5s ease-in-out;
+}
+
+@-webkit-keyframes mostrar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes mostrar {
@@ -318,7 +333,8 @@ button {
 
 .form__input--genero {
   color: aliceblue;
-  columns: unset;
+  -moz-columns: unset;
+       columns: unset;
 }
 
 .form__input--submit {
@@ -329,6 +345,8 @@ button {
 
 .form__link {
   text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   color: rgb(170, 33, 9);
 }
@@ -582,7 +600,6 @@ footer a img {
   }
   .fixture__grupo {
     display: grid;
-    max-width: 100%;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
@@ -603,6 +620,4 @@ footer a img {
   .container__query {
     display: grid;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

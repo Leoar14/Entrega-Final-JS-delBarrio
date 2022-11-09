@@ -1,0 +1,12 @@
+.carrusel{
+    justify-content: center;
+    border: 5px radius 20px blue;
+    border-collapse: 5px solid;
+}.carousel-item{
+    
+    align-items: center;
+    justify-content: center;
+}
+.carousel-indicators [data-bs-target] {
+    border-bottom-color: #DC3F31;
+}

@@ -9,40 +9,40 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
     <body>
-      <header class="container justify-content-center"> 
+      <header class="container-fluid justify-content-center"> 
         <!-- Inicio del menu -->
         <nav class="navbar  navbar-blue bg-blue">
-          <div class="container-fluid m-2">
-            <!-- icono -->
-            <a class="navbar-brand" href="#">
-              <img  class="imagenes-videos" src="./imagenes-b/logoheader.jpg" alt="logo de la asociacion de futbol argentino" width="200">
-            </a>                
+          <div class="container m-2">
+                          
             <!-- boton del menu -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
+          <!-- icono -->
+          <a class="navbar-brand justify-content-end" href="#">
+            <img  class="imagenes-logo" src="./imagenes-b/logoheader.jpg" alt="logo de la asociacion de futbol argentino" width="150">
+          </a> 
               <!-- elementos del menu colapsable -->
-          <div class="collapse navbar-collapse" id="menu">
+          <div class="collapse navbar-collapse justify-content-end" id="menu">
             <ul class="navbar-nav me-auto">
               <li class="nav-item ">
-                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                <a class="nav-link active text-light" aria-current="page" href="./index.html">Inicio</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item text-light">
                 <a class="nav-link" href="./pages-b/plantilla.html">Plantilla</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Servicios
                 </a>
-            <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="./pages-b/tienda.html">Tienda</a></li>
               <li><a class="dropdown-item" href="./pages-b/fixture.html">Fixture</a><li>   
               <li><a class="dropdown-item" href="./pages-b/login.html">Login</a><li> 
             </ul>
               </li>
             </ul>
-              <hr class="d-md-none text-white-50">
           </div>
         </nav>
     </header> 
@@ -55,7 +55,7 @@
 <!-- seccion para agregar contenido img, parafos, etc... -->
       <div class="container__query">
         <div class="imagenes-videos">
-          <img class=" img--noticias " src="../imagenes-b/argentina-jamaica.jpg" alt="Messi contento por sus 2 goles"/>
+          <img class=" img--noticias " src="./imagenes-b/argentina-jamaica.jpg" alt="Messi contento por sus 2 goles"/>
         </div>
         <p class="noticias__texto">
           La Selección Argentina goleó 3-0 a Jamaica con un gol de Julián Álvarez y dos de Lionel Messi, que ingresó en el segundo tiempo y en apenas tres minutos perfiló la goleada en la ciudad estadounidense de Nueva Jersey, en el último duelo de la Albiceleste antes de viajar al Mundial de Qatar.
@@ -78,7 +78,7 @@
         <h2 class="main__container-titles">Argentina vs Honduras</h2>
         <div class="container__query">
           <div class="imagenes-videos">
-            <img class="img--noticias" src="../imagenes-b/argentina-honduras.jpg" alt="Messi contra honduras"/>
+            <img class="img--noticias" src="./imagenes-b/argentina-honduras.jpg" alt="Messi contra honduras"/>
           </div>
           <p  class="noticias__texto">
             Argentina derrotó a Honduras por 3-0 este viernes con una exhibición de Leo Messi, que anotó dos tantos en una fiesta de la hinchada de la albiceleste en Miami.
@@ -124,7 +124,7 @@
           <div >
             <img
               class="logo"
-              src="../imagenes-b/logo.jpg" 
+              src="./imagenes-b/logo.jpg" 
               alt="logo empresa" 
               class=""/>
           </div>

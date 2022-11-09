@@ -9,43 +9,43 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>      
   <body>
-    <header class="container justify-content-center"> 
-<!-- Inicio del menu -->
+    <header class="container-fluid justify-content-center"> 
+      <!-- Inicio del menu -->
       <nav class="navbar  navbar-blue bg-blue">
-        <div class="container-fluid m-2">
-<!-- icono -->
-          <a class="navbar-brand" href="#">
-          <img  class="imagenes-videos" src="../imagenes-b/logoheader.jpg" alt="logo de la asociacion de futbol argentino" width="200">
-          </a>
-<!-- boton del menu -->
+        <div class="container m-2">
+                        
+          <!-- boton del menu -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-<!-- elementos del menu colapsable -->
-        <div class="collapse navbar-collapse" id="menu">
+        <!-- icono -->
+        <a class="navbar-brand justify-content-end" href="#">
+          <img  class="imagenes-logo" src="../imagenes-b/logoheader.jpg" alt="logo de la asociacion de futbol argentino" width="150">
+        </a> 
+            <!-- elementos del menu colapsable -->
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
           <ul class="navbar-nav me-auto">
             <li class="nav-item ">
-              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item text-light">
               <a class="nav-link" href="../pages-b/plantilla.html">Plantilla</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Servicios
-              </a>    
-              <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="../pages-b/tienda.html">Tienda</a></li>
-                <li><a class="dropdown-item" href="../pages-b/fixture.html">Fixture</a><li>   
-                <li><a class="dropdown-item" href="../pages-b/login.html">Login</a><li> 
-              </ul>
+              </a>
+          <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="../pages-b/tienda.html">Tienda</a></li>
+            <li><a class="dropdown-item" href="../pages-b/fixture.html">Fixture</a><li>   
+            <li><a class="dropdown-item" href="../pages-b/login.html">Login</a><li> 
+          </ul>
             </li>
-          </ul>    
-          <hr class="d-md-none text-white-50">
+          </ul>
         </div>
       </nav>
-    </header>    
+  </header> 
     <main>
       <h2>Sección Jugadores</h2>
       <p class="noticias__texto--jugadores">Este viernes, Lionel Scaloni deberá entregarle a la Asociación del Fútbol Argentino (AFA) la lista preliminar de 35 jugadores para el mundial de Qatar 2022.
@@ -70,7 +70,7 @@
             <button class="tarjeta__variable"> Lionel Messi </button>
             <button class="tarjeta__variable"> Lautaro Martinez </button>
             <button class="tarjeta__variable"> Angel Di Maria </button>
-            <a href="" class="tarjeta__boton">Ver Equipo</a>
+            <a href="https://www.avfc.co.uk/" class="tarjeta__boton"  target="_blank">Ver Equipo</a>
           </article>
         </div>
       </section>
@@ -91,7 +91,7 @@
             <button class="tarjeta__variable"> Lionel Messi </button>              
             <button class="tarjeta__variable"> Lautaro Martinez </button>              
             <button class="tarjeta__variable"> Angel Di Maria </button>
-            <a href="" class="tarjeta__boton">Ver Equipo</a>
+            <a href="https://www.atleticodemadrid.com/" class="tarjeta__boton"  target="_blank">Ver Equipo</a>
           </article>
         </div>
         <div class="caja__1">
@@ -110,7 +110,7 @@
             <button class="tarjeta__variable"> Lionel Messi </button>             
             <button class="tarjeta__variable"> Lautaro Martinez </button>           
             <button class="tarjeta__variable"> Angel Di Maria </button>
-            <a href="" class="tarjeta__boton">Ver Equipo</a>
+            <a href="https://www.slbenfica.pt/" class="tarjeta__boton" target="_blank">Ver Equipo</a>
           </article>
         </div>
         <div class="caja__1">
@@ -129,7 +129,7 @@
             <button class="tarjeta__variable"> Lionel Messi </button>
             <button class="tarjeta__variable"> Lautaro Martinez </button>
             <button class="tarjeta__variable"> Angel Di Maria </button>
-            <a href="" class="tarjeta__boton">Ver Equipo</a>
+            <a href="https://www.tottenhamhotspur.com/" class="tarjeta__boton" target="_blank">Ver Equipo</a>
           </article>
         </div>
         <div class="caja__1">
@@ -148,7 +148,7 @@
             <button class="tarjeta__variable"> Lionel Messi </button>          
             <button class="tarjeta__variable"> Lautaro Martinez </button>         
             <button class="tarjeta__variable"> Angel Di Maria </button>
-            <a href="" class="tarjeta__boton">Ver Equipo</a>
+            <a href="https://www.ol.fr/fr" class="tarjeta__boton" target="_blank">Ver Equipo</a>
           </article>
         </div>
       </section>
@@ -169,7 +169,7 @@
             <button class="tarjeta__variable"> Lionel Messi </button>            
             <button class="tarjeta__variable"> Lautaro Martinez </button>             
             <button class="tarjeta__variable"> Angel Di Maria </button>
-            <a href="" class="tarjeta__boton">Ver Equipo</a>
+            <a href="https://www.atleticodemadrid.com/" class="tarjeta__boton" target="_blank">Ver Equipo</a>
           </article>
         </div>
         <div class="caja__1">
@@ -188,7 +188,7 @@
             <button class="tarjeta__variable"> Lionel Messi </button>
             <button class="tarjeta__variable"> Lautaro Martinez </button>
             <button class="tarjeta__variable"> Angel Di Maria </button>
-            <a href="" class="tarjeta__boton">Ver Equipo</a>
+            <a href="https://www.juventus.com/es/" class="tarjeta__boton" target="_blank">Ver Equipo</a>
           </article>
         </div>
         <div class="caja__1">
@@ -207,7 +207,7 @@
             <button class="tarjeta__variable"> Lionel Messi </button>             
             <button class="tarjeta__variable"> Lautaro Martinez </button>         
             <button class="tarjeta__variable"> Angel Di Maria </button>
-            <a href="" class="tarjeta__boton">Ver Equipo</a>
+            <a href="https://villarrealcf.es/" class="tarjeta__boton" target="_blank">Ver Equipo</a>
           </article>
         </div>
       </section>
@@ -228,7 +228,7 @@
             <button class="tarjeta__variable--activo"> Lionel Messi </button>
             <button class="tarjeta__variable"> Lautaro Martinez </button>
             <button class="tarjeta__variable"> Angel Di Maria </button>
-            <a href="" class="tarjeta__boton">Ver Equipo</a>
+            <a href="https://es.psg.fr/" class="tarjeta__boton" target="_blank">Ver Equipo</a>
           </article>
         </div>   
         <div class="caja__1">
@@ -247,7 +247,7 @@
             <button class="tarjeta__variable"> Lionel Messi </button>             
             <button class="tarjeta__variable--activo"> Lautaro Martinez </button>          
             <button class="tarjeta__variable"> Angel Di Maria </button>
-            <a href="" class="tarjeta__boton">Ver Equipo</a>
+            <a href="https://www.inter.it/en" class="tarjeta__boton" target="_blank">Ver Equipo</a>
           </article>
         </div>
         <div class="caja__1">
@@ -266,14 +266,19 @@
             <button class="tarjeta__variable"> Lionel Messi </button>            
             <button class="tarjeta__variable"> Lautaro Martinez </button>            
             <button class="tarjeta__variable--activo"> Angel Di Maria </button>
-            <a href="" class="tarjeta__boton">Ver Equipo</a>
+            <a href="https://www.juventus.com/es/" class="tarjeta__boton" target="_blank">Ver Equipo</a>
           </article>
         </div>  
       </section>
       <h3>Cuerpo Tecnico</h3>
-      <p class="noticias__texto--jugadores">Pablo Aimar (Ayudante de campo): con una interesante historia como futbolista, colgó los botines y destinó su nuevo camino a dirigir. Sus primeros pasos fueron con los colores de la Selección Argentina pero en la Sub 17, a pedido de la dirigencia de AFA. El "Payasito" acompañó a Lionel Scaloni desde el principio, en el Torneo L'Alcudia, luego trabajó con él en el interinato en la Mayor y continúan juntos. Además, como DT, Aimar consiguió el Sudamericano Sub 17 en Lima, Perú.</p>
-      <p class="noticias__texto--jugadores">Walter Samuel (Ayudante de campo): ya que Aimar está ligado a los juveniles, Scaloni tomó la decisión de sumarlo para que sea uno de sus hombres de confianza. El exdefensor tuvo dos experiencias en el Inter y en el Lugano de Suiza.</p>
-      <p class="noticias__texto--jugadores">Roberto Ayala (Ayudante de campo): fue el último en sumarse al cuerpo técnico de la "Scaloneta" por razones similares a las de Walter Samuel. Antes, el "Ratón" trabajó como mánager de Racing y secretario técnico del Valencia de España</p>
+      <div class="container__noticias">
+        <span class="noticias__span"> Pablo Aimar (Ayudante de campo):</span>
+        <p class="noticias__texto--jugadores">Con una interesante historia como futbolista, colgó los botines y destinó su nuevo camino a dirigir. Sus primeros pasos fueron con los colores de la Selección Argentina pero en la Sub 17, a pedido de la dirigencia de AFA. El "Payasito" acompañó a Lionel Scaloni desde el principio, en el Torneo L'Alcudia, luego trabajó con él en el interinato en la Mayor y continúan juntos. Además, como DT, Aimar consiguió el Sudamericano Sub 17 en Lima, Perú.</p>
+        <span class="noticias__span"> Walter Samuel (Ayudante de campo):</span>
+        <p class="noticias__texto--jugadores">Ya que Aimar está ligado a los juveniles, Scaloni tomó la decisión de sumarlo para que sea uno de sus hombres de confianza. El exdefensor tuvo dos experiencias en el Inter y en el Lugano de Suiza.</p>
+        <span class="noticias__span"> Roberto Ayala (Ayudante de campo):</span>
+        <p class="noticias__texto--jugadores">Fue el último en sumarse al cuerpo técnico de la "Scaloneta" por razones similares a las de Walter Samuel. Antes, el "Ratón" trabajó como mánager de Racing y secretario técnico del Valencia de España</p>
+      </div>
       <section class="grancaja__1">
         <div class="caja__1">
           <article class="tarjeta">

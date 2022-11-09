@@ -1,0 +1,44 @@
+header .navbar{
+    background-color: rgba(3, 17, 54, 0.836);
+        
+}
+
+.container{
+    width: auto;
+}
+
+.navbar-nav{
+    width: 150px;
+    flex-wrap: nowrap;
+    
+}
+.navbar-toggler{
+    background-color: rgb(236, 227, 98);
+    border-radius: 10px ;
+}
+
+.nav-item{
+    color: antiquewhite;
+    justify-content: end;
+    background-color: rgba(15, 77, 128, 0.685);
+    width: 300px;
+    border: solid rgba(202, 66, 12, 0.76);
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    padding: 3px;
+    margin-top: 10px;
+}
+.nav-link {
+    color: antiquewhite;
+    width: auto;
+}
+
+.dropdown-item {
+    border-radius: 30px;
+    width: 200px;
+    text-align: center;
+    background-color: rgba(202, 66, 12, 0.76);
+    margin-top: 5px;
+    color: antiquewhite;
+    overflow: auto;
+}

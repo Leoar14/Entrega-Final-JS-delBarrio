@@ -9,66 +9,66 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <header class="container justify-content-center"> 
-<!-- Inicio del menu -->
+    <header class="container-fluid justify-content-center"> 
+      <!-- Inicio del menu -->
       <nav class="navbar  navbar-blue bg-blue">
-        <div class="container-fluid m-2">
-<!-- icono -->
-          <a class="navbar-brand" href="#">
-            <img  class="imagenes-videos" src="../imagenes-b/logoheader.jpg" alt="logo de la asociacion de futbol argentino" width="200">
-          </a>
-<!-- boton del menu -->
+        <div class="container m-2">
+                        
+          <!-- boton del menu -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-<!-- elementos del menu colapsable -->
-        <div class="collapse navbar-collapse" id="menu">
+        <!-- icono -->
+        <a class="navbar-brand justify-content-end" href="#">
+          <img  class="imagenes-logo" src="../imagenes-b/logoheader.jpg" alt="logo de la asociacion de futbol argentino" width="150">
+        </a> 
+            <!-- elementos del menu colapsable -->
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
           <ul class="navbar-nav me-auto">
             <li class="nav-item ">
-              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item text-light">
               <a class="nav-link" href="../pages-b/plantilla.html">Plantilla</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Servicios
               </a>
-              <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="../pages-b/tienda.html">Tienda</a></li>
-                <li><a class="dropdown-item" href="../pages-b/fixture.html">Fixture</a><li>   
-                <li><a class="dropdown-item" href="../pages-b/login.html">Login</a><li> 
-              </ul>
+          <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="../pages-b/tienda.html">Tienda</a></li>
+            <li><a class="dropdown-item" href="../pages-b/fixture.html">Fixture</a><li>   
+            <li><a class="dropdown-item" href="../pages-b/login.html">Login</a><li> 
+          </ul>
             </li>
           </ul>
-          <hr class="d-md-none text-white-50">
         </div>
       </nav>
-    </header> 
+  </header>
     <h1 id="titulo">Tienda</h1>
     <h3 class="main__container-titles"> Promociones Locas!</h3><br>
     <section class="carrusel">
 <!-- CAROUSEL-->
-      <div id="carouselExampleIndicators" class="carousel slide align-content-center justify-content-center col-8" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <div id="carouselExampleIndicators" class="carousel slide col-10 m-auto shadow-lg p-3 mb-5 bg-body rounded rounded-5 border border-5 " data-bs-ride="true">
+        <div class="carousel-indicators ">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active btn btn-secondary" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="btn btn btn-secondary" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="btn btn btn-danger" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="btn btn btn-danger" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../imagenes-b/conjunto-mangacorta.jpg" class="d-block w-120 img-fluid rounded-3" alt="conjunto-mangacorta">
+            <img src="../imagenes-b/conjunto-abrigado.jpg" class="d-block w-120 m-auto" alt="conjunto abrigado">
           </div>
           <div class="carousel-item">
-            <img src="../imagenes-b/conjunto-mangalarga.jpg" class="d-block w-120 img-fluid rounded-3" alt="conjunto-mangalarga">
+            <img src="../imagenes-b/conjunto-alternativo.jpg" class="d-block w-120 m-auto" alt="conjunto alternativo">
           </div>
           <div class="carousel-item">
-            <img src="../imagenes-b/conjunto-alternativo.jpg" class="d-block w-120 img-fluid rounded-3" alt="conjunto-alternativo">
+            <img src="../imagenes-b/conjunto-mangacorta.jpg" class="d-block w-120 m-auto" alt="conjunto-mangacorta">
           </div>
           <div class="carousel-item">
-            <img src="../imagenes-b/conjunto-abrigado.jpg" class="d-block w-120 img-fluid rounded-3" alt="conjunto-abrigado">
+            <img src="../imagenes-b/conjunto-mangalarga.jpg" class="d-block w-120 m-auto" alt="conjunto-mangalarga">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -80,6 +80,11 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+
+
+
+
 <!-- CAROUSEL-->
       </section>
       <h2>Artículos en venta</h2>
@@ -99,7 +104,8 @@
           <a href="" class="tarjeta__boton">Comprar</a>
         </div>
         <div class="tarjeta">
-          <img class="tarjeta__img" src="../imagenes-b/camiseta-titular-anterior.jpg" alt="Camiseta Titular Anterior"/><h4>Camiseta Titular Anterior</h4>
+          <img class="tarjeta__img" src="../imagenes-b/camiseta-titular-anterior.jpg" alt="Camiseta Titular Anterior"/>
+          <h4 class="tarjeta__title4">Camiseta Titular Anterior</h4>
           <span class="tarjeta__precio">Precio: $17000 </span>
           <a href="" class="tarjeta__boton">Comprar</a>
         </div>

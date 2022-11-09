@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+ul,
+ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: rgba(139, 151, 185, 0.836) ;
+    max-width: 100%; 
+    }
+
+header{
+        background-color: rgba(3, 17, 54, 0.836);
+    }
+    
+
+h1{
+    text-align: center;
+    color: antiquewhite;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    background-color:  rgba(3, 17, 54, 0.623);
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.container__title h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    display: none;
+}
+
+.container__title h2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+img{
+    max-width: 400px;
+}
+
+.imagenes-logo {
+    width: 100px;
+}
