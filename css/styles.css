@@ -221,6 +221,59 @@ header .navbar {
     display: grid;
   }
 }
+.fixture__titulo {
+  background-color: rgb(121, 7, 7);
+  border-radius: 40px;
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.fixture__texto {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.fixture--pais {
+  width: 90px;
+}
+
+.fixture--vs {
+  width: 10%;
+}
+
+table, th, td {
+  background-color: rgb(3, 17, 54);
+  padding: 5px;
+  margin-top: 20px;
+  border: 3px solid black;
+  width: 375px;
+  text-align: center;
+  color: antiquewhite;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 375px) {
+  .fixture__grupo {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 1em;
+  }
+}
+@media (min-width: 764px) {
+  .fixture__grupo {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+  }
+}
 input {
   margin: 20px;
 }
@@ -371,10 +424,6 @@ button, .btn {
   border-color: rgb(167, 130, 11);
   margin: 1px 1px 1px 1px;
   align-items: center;
-}
-
-.caja__1:hover {
-  transform: scale(0.2);
 }
 
 .tarjeta__img {
@@ -559,4 +608,4 @@ footer a img {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
