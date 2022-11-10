@@ -24,15 +24,18 @@ header {
 }
 
 h1 {
+  font-size: 30px;
   text-align: center;
   color: antiquewhite;
 }
 
 h1, h2, h3, h4 {
+  color: antiquewhite;
   text-align: center;
   background-color: rgba(3, 17, 54, 0.623);
   margin-top: 15px;
   padding: 5px;
+  font-size: 2.3rem;
 }
 
 .container__title h1 {
@@ -137,15 +140,15 @@ header .navbar {
 }
 
 .main__container-titles {
-  color: rgb(99, 15, 15);
-  font-size: 15px;
+  color: antiquewhite;
+  font-size: 20px;
   font-weight: 900;
   padding: 3px;
 }
 
 .noticias__texto {
   color: rgb(99, 15, 15);
-  font-size: 13px;
+  font-size: 20px;
   text-align: center;
   align-content: center;
   margin: 5px auto;
@@ -154,11 +157,13 @@ header .navbar {
 .noticias__texto--jugadores {
   text-align: center;
   margin: 20px;
+  font-size: 20px;
 }
 
 .noticias__span {
   color: rgb(99, 15, 15);
   padding: 10px;
+  font-size: 16px;
 }
 
 @media (min-width: 764px) {
@@ -194,6 +199,7 @@ header .navbar {
     margin: 10px;
     transition: transform 30ms ease;
     margin-left: 45px;
+    font-size: 23px;
   }
   .noticias__span:hover {
     transform: scale(0.8);
@@ -219,6 +225,9 @@ header .navbar {
 @media (min-width: 1200px) {
   .container__query {
     display: grid;
+  }
+  .noticias__texto {
+    width: 500px;
   }
 }
 .fixture__titulo {
@@ -274,17 +283,6 @@ table, th, td {
     gap: 1em;
   }
 }
-input {
-  margin: 20px;
-}
-
-button, .btn {
-  cursor: pointer;
-  align-items: center;
-  text-align: center;
-}
-
-/* Estilos para Formulario */
 .form {
   margin: auto;
   width: 90%;
@@ -298,6 +296,7 @@ button, .btn {
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   gap: 0.6em;
   animation: mostrar 1.5s ease-in-out;
+  justify-content: center;
 }
 
 @keyframes mostrar {
@@ -321,8 +320,7 @@ button, .btn {
 
 .form__img {
   margin: auto;
-  width: 80%;
-  /* max-width: 60vw; */
+  max-width: 70%;
 }
 
 .form__contact {
@@ -364,8 +362,9 @@ button, .btn {
 }
 
 .form__link {
+  justify-items: center;
   text-align: center;
-  width: max-content;
+  width: 200px;
   color: rgb(170, 33, 9);
 }
 
@@ -380,6 +379,7 @@ button, .btn {
 
 .form__social {
   width: auto;
+  justify-content: center;
 }
 
 .form__link {
@@ -415,6 +415,16 @@ button, .btn {
     grid-column: 1/4;
   }
 }
+input {
+  margin: 20px;
+}
+
+button, .btn {
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+}
+
 .tarjeta {
   text-align: center;
   border: 4px solid black;
@@ -428,6 +438,7 @@ button, .btn {
 
 .tarjeta__img {
   max-width: 100%;
+  object-fit: cover;
 }
 
 .tarjeta__titulo {

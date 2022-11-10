@@ -1,0 +1,121 @@
+.form{
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    background-image: linear-gradient(to left, rgba(54, 190, 231, 0.705), rgba(54, 190, 231, 0.705));
+    overflow: hidden;
+    padding: .7em;
+    border-radius: 1em;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: .6em;
+    animation: mostrar 1.5s ease-in-out;
+    justify-content: center;
+}
+@keyframes mostrar {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.form__figure{
+    /* overflow: hidden; */
+    border-radius: 1em;
+    background-color: rgba(3, 17, 54, 0.815);
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 94%;
+}
+
+.form__img{  
+    margin: auto;
+    max-width: 70%;
+
+}
+.form__contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 3em .7em;
+    text-align: center;
+}
+.form__form1{
+    display: grid;
+    justify-items: center;
+    gap: 1.5em;
+    background-color: rgba(3, 17, 54, 0.815);
+    border-radius: 1em;
+}
+.form__input{
+    width: 80%;
+    max-width: 500px;
+    outline: none;
+    border: none;
+    padding: 1em;
+    font: inherit;
+    border-radius: .6em;
+}
+.form__input--genero{
+    color: aliceblue;
+    columns: unset;
+}
+.form__input--submit{
+    background-color: #DC3F31;
+    color: #fff;
+    font-weight: 600;
+}
+.form__link {
+    justify-items: center;
+    text-align: center;
+    width: 200px;
+    color: rgb(170, 33, 9);
+}
+.form__title{
+    font-size: 2.3rem;
+}
+.form__paragraph{
+    text-align: center;
+    margin: .3em 0;
+}
+.form__social{
+    width: auto;
+    justify-content: center;
+}
+.form__link{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: .6em 1.5em;
+}
+.form__link:hover{
+    background-color: #fff;
+}
+.form__icon{
+    width: 30px;
+    height: 30px;
+}
+@media (min-width:764px){
+    
+
+    .form__social{
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+    .form__figure{
+        display: flex;
+        align-items: center;
+    }
+    .form__contact--redes{
+        grid-column: 1/4;
+    }
+}
