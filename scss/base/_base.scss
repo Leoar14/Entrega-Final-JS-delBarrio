@@ -20,7 +20,8 @@ body{
     }
 
 header{
-        background-color: rgba(3, 17, 54, 0.836);
+    background-color: $color-primary;
+    // background-color: rgba(3, 17, 54, 0.836);
     }
     
 
@@ -31,9 +32,10 @@ h1{
 }
 
 h1, h2, h3, h4 {
-    color: antiquewhite;
+    color: $color-secondary;
     text-align: center;
-    background-color:  rgba(3, 17, 54, 0.623);
+    background-color: $color-primary;
+    // background-color:  rgba(3, 17, 54, 0.623);
     margin-top: 15px;
     padding: 5px;
     font-size: 2.3rem;
