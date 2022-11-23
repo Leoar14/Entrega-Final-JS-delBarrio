@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    max-width: 100%;
 }
 
 .main__container{
@@ -24,7 +24,7 @@
 
 .noticias__texto{
     color: rgb(99, 15, 15);
-    font-size: 20px;
+    font-size: 5vw;
     text-align: center;
     align-content: center;
     margin: 5px auto;
@@ -39,12 +39,13 @@
 .noticias__span{
     color: rgb(99, 15, 15);
     padding: 10px;
-    font-size: 16px;
+    font-size: 5vw;
 }
 @media (min-width:764px){
     .container__query{
-        display: grid;
-    
+        // display: grid;
+        display: flex;
+        flex-direction: row;
         padding-top: 20px;
         align-items: center;
         
@@ -57,8 +58,9 @@
     h2 {
         margin-top: 15px;
     }
-    .imagenes-videos{        
-        grid-column: 2/3;
+    .imagenes-videos{  
+        display: inline;      
+        // grid-column: 2/3;
         width: 100%;
     }
     .container__noticias{
@@ -84,11 +86,11 @@
     .noticias__texto{
         text-align: center;
         align-items: center;
-        grid-column: 3/5;
+        // grid-column: 3/5;
         /* margin: 10px; */
         border-bottom: 2px solid rgb(88, 84, 84) ;
         padding: 10px;
-        width: 300px;
+        
     }    
     .noticias__texto--jugadores {
         display: grid;
