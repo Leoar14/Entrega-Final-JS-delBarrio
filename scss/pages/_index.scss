@@ -5,50 +5,41 @@
     align-items: center;
     max-width: 100%;
 }
-
 .main__container{
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-direction: column;
     max-width: 100vw;
     padding-top: 10px;
 }
-
 .main__container-titles{
     color:antiquewhite;
     font-size: 20px;
     font-weight: 900;
     padding: 3px;
 }
-
 .noticias__texto{
     color: rgb(99, 15, 15);
-    font-size: 5vw;
+    font-size: 15px;
     text-align: center;
     align-content: center;
     margin: 5px auto;
     }
-
 .noticias__texto--jugadores{
     text-align: center;
     margin: 20px ;
-    font-size: 20px;
+    font-size: 15px;
 }
-
 .noticias__span{
     color: rgb(99, 15, 15);
     padding: 10px;
-    font-size: 5vw;
+    font-size: 18px;
 }
 @media (min-width:764px){
     .container__query{
-        // display: grid;
-        display: flex;
-        flex-direction: row;
+        display: grid;
         padding-top: 20px;
         align-items: center;
-        
     }
     .container__title h1 {
         display: block;
@@ -59,9 +50,9 @@
         margin-top: 15px;
     }
     .imagenes-videos{  
-        display: inline;      
-        // grid-column: 2/3;
+        grid-column: 2/3;
         width: 100%;
+        object-fit: cover;
     }
     .container__noticias{
         width: 90%;
@@ -86,11 +77,11 @@
     .noticias__texto{
         text-align: center;
         align-items: center;
-        // grid-column: 3/5;
-        /* margin: 10px; */
+        grid-column: 3/5;
+        margin: 10px;
         border-bottom: 2px solid rgb(88, 84, 84) ;
         padding: 10px;
-        
+        width: 450px;
     }    
     .noticias__texto--jugadores {
         display: grid;
@@ -103,7 +94,8 @@
 }
 @media (min-width: 1200px) {
     .container__query{
-        display: grid;       
+        display: grid; 
+        grid-template-columns: repeat(4fr);    
     }
     .noticias__texto{
         width: 500px;
