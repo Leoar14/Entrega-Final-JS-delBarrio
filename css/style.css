@@ -492,6 +492,16 @@ button, .btn {
   border: solid 2px black;
   background-color: white;
   align-items: center;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(to right, rgb(12, 175, 121) 50%, rgb(212, 125, 18) 50%) no-repeat left/200%;
+  transition: background-position 0.3s ease;
+}
+
+.tarjeta__variable:hover {
+  background-position: right;
+  color: black;
 }
 
 .tarjeta__variable--activo {
