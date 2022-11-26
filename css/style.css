@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -170,7 +171,6 @@ header .navbar {
 }
 
 .noticias__texto {
-  color: rgb(99, 15, 15);
   font-size: 15px;
   text-align: center;
   align-content: center;
@@ -495,7 +495,7 @@ button, .btn {
   border: none;
   cursor: pointer;
   color: white;
-  background: linear-gradient(to right, rgb(12, 175, 121) 50%, rgb(212, 125, 18) 50%) no-repeat left/200%;
+  background: linear-gradient(to right, rgb(12, 175, 121) 50%, rgb(209, 212, 18) 50%) no-repeat left/200%;
   transition: background-position 0.3s ease;
 }
 
